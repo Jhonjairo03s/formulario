@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="contenedor">
+        <div class="main titulo">
+            <p>Organizador de tareas</p>
+            <button id="btn-tarea">Tarea nueva</button>
+        </div>
+        <div class="ficha"></div>
+        <div class="formulario">
+            <form action="">
+                <div class="form-group titulo">
+                    <label for="titulo">Titulo</label>
+                    <input type="text" name="titulo" id="titulo">
+                </div>
+                <div class="form-group fecha">
+                    <label for="fecha">Fecha</label>
+                    <input type="date" name="fecha" id="fecha">
+                </div>
+                <div class="form-group descripcion">
+                    <label for="descripcion">Descripción</label>
+                    <textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+                </div>
+                <div class="form-group btn">
+                    <button id="btn-anadir">Añadir</button>
+                    <button id="btn-cerrar">Cerrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
