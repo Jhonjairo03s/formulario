@@ -47,13 +47,17 @@ function actualizarFicha() {
     const tareas = JSON.parse(localStorage.getItem("tareas")) || [];
     let contenido = '';
     tareas.forEach((tarea, index) => {
+        contenido += `<div class="tarea-carta">`;
+
         contenido += `<p class="titulo">Título: ${tarea.titulo} (ID: ${index})</p>`;
         contenido += `<p class="fecha">Fecha: ${tarea.fecha}</p>`;
         contenido += `<p class="descripcion">Descripción: ${tarea.descripcion}</p>`;
         
-        contenido += `<div class="btn-listas">`;
+        contenido += `<div class="botones-tarea">`;
         contenido += `<button id="btn-editar" data-index="${index}">Editar</button>`;
         contenido += `<button id="btn-eliminar" data-index="${index}">Eliminar</button>`;
+        contenido += `</div>`;
+
         contenido += `</div>`;
     });
     ficha.innerHTML = contenido;

@@ -64,13 +64,30 @@ button {
     row-gap: 5px;
 }
 
-.contenedor .formulario #btn-anadir,
-.contenedor .formulario #btn-cerrar {
-    box-shadow: 0 0 5px #84425b;
-}
-
 .contenedor .ficha {
     border: 1px solid transparent;
-    background-color: #f6b5cb;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
+.tarea-carta {
+    background-color: #f6b5cb;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.tarea-carta .titulo {
+    margin-top: 0;
+}
+
+.botones-tarea {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
